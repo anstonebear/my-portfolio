@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/main.css';
+
+import Navbar from './components/navbar/Navbar';
+import Header from './components/header/Header';
+
+import Footer from './components/footer/Footer';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			<Navbar />
+			<Header />
+			<main className='section'>
+				<div className='container'>
+					<ul className='content-list'>
+						<li className='content-list__item'>
+							<h2 className='title-2'>Skills</h2>
+							<p>
+								JavaScript, TypeScript, ReactJS, NextJS, Redux Toolkit, HTML,
+								CSS, Sass, NPM, BootStrap, MaterialUI, Yarn, TailwindCSS,
+								StyledComponents, NGINX, Webpack Module Federation, Jest.js, RTK
+								Query, Apollo GraphQL, Git, Rx.js
+							</p>
+						</li>
+						<li className='content-list__item'>
+							<h2 className='title-2'>About me</h2>
+							<p>
+								My name is Mikhailov Anton, I am 24 years old. I have been
+								professionally involved in frontend development for over two
+								years. During this time, I have successfully solved many
+								problems and completed a number of courses, which significantly
+								expanded my knowledge and honed my skills. I am ready to
+								implement interesting projects in a team with talented people.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</main>
+			<Footer />
+		</>
+	);
 }
 
 export default App;
