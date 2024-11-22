@@ -46,11 +46,11 @@
 	opacity: 0.8;
 }
 
-.nav-list__link--active {
+/* .nav-list__link--active {
 	position: relative;
-}
+} */
 
-.nav-list__link--active::before {
+/* .nav-list__link--active::before {
 	content: '';
 
 	position: absolute;
@@ -61,4 +61,4 @@
 	height: 2px;
 	width: 100%;
 	background-color: var(--accent);
-}
+} */
